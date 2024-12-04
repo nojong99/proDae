@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.MemberDAO">
+	
+	
+	<select id="login" parameterType="memberVO"
+		resultType="memberVO">
+		select * from member_detail where id=#{id} and pw=#{pw}
+	</select>
+	
+	
+	<!-- 아이디 확인 -->
+	<select id="idCheck" parameterType="memberVO" resultType="memberVO">
+ 		select * from member_detail where id= #{id}
+	</select>
+	
+	<select id="selectAllMember" resultType="memberVO">
+		select * from member_detail
+	</select>
+	<insert id="insertMember" parameterType="memberVO">
+		insert into member_detail (id,pw,name,email,address,department,phone,role, enterDate, gradDate)
+		values(#{id},#{pw},#{name},#{email},#{address},#{department},#{phone},#{role},#{enterDate},#{gradDate})
+	</insert>
+	<update id="updateMemberPw" parameterType="memberVO">
+		update member_detail set pw=#{pw} where id=#{id}
+	</update>
+	<delete id="deleteMember" parameterType="String">
+		delete from member_detail where id=#{id}
+	</delete>
+</mapper>  

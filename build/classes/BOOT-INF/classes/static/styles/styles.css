@@ -1,0 +1,381 @@
+/* 
+ * @prettier
+ * 웹사이트에 전반적으로 사용되는 스타일을 정의하는 css파일입니다.
+ */
+
+:root {
+  --color-background: rgb(250, 250, 249);
+}
+
+html {
+  background-color: var(--color-background);
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.root {
+  height: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  min-width: 100%;
+  width: 100%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-col-1 {
+  grid-column: span 1;
+}
+
+.grid-col-2 {
+  grid-column: span 2;
+}
+
+.grid-col-3 {
+  grid-column: span 3;
+}
+
+.grid-col-4 {
+  grid-column: span 4;
+}
+
+.grid-col-5 {
+  grid-column: span 5;
+}
+
+.grid-col-6 {
+  grid-column: span 6;
+}
+
+.grid-col-7 {
+  grid-column: span 7;
+}
+
+.grid-col-8 {
+  grid-column: span 8;
+}
+
+.grid-col-9 {
+  grid-column: span 9;
+}
+
+.grid-col-10 {
+  grid-column: span 10;
+}
+
+.grid-row-1 {
+  grid-row: span 1;
+}
+
+.grid-row-2 {
+  grid-row: span 2;
+}
+
+.grid-row-3 {
+  grid-row: span 3;
+}
+
+.grid-row-4 {
+  grid-row: span 4;
+}
+
+.grid-row-5 {
+  grid-row: span 5;
+}
+
+.grid-row-6 {
+  grid-row: span 6;
+}
+
+.grid-row-7 {
+  grid-row: span 7;
+}
+
+.grid-row-8 {
+  grid-row: span 8;
+}
+
+.grid-row-9 {
+  grid-row: span 9;
+}
+
+.grid-row-10 {
+  grid-row: span 10;
+}
+
+/* 헤더 스타일 정의 */
+.header {
+  border-bottom: 1px solid #ccc;
+  font-size: 1.125rem;
+  height: 5rem;
+  position: relative;
+  width: 100%;
+}
+
+.top-navbar {
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.top-navbar-daejin {
+  order: 0;
+}
+
+.top-navbar-main {
+  font-size: 1.05rem;
+  gap: 1.8rem;
+  order: 1;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.top-navbar-main-item {
+  height: 5rem;
+  position: relative;
+}
+
+.top-navbar-link {
+  color: black;
+}
+
+.top-navbar-link:hover {
+  color: #113add;
+}
+
+.top-navbar-dropdown {
+  background-color: #1555a3;
+  left: -1rem;
+  padding: 1rem 0;
+  position: absolute;
+  top: 5rem;
+  width: 13rem;
+  z-index: 10000;
+}
+
+.top-navbar-main-item:hover .top-navbar-link {
+  color: #113add;
+}
+
+.top-navbar-dropdown-item {
+  padding: 0.5rem 1rem;
+}
+
+.top-navbar-dropdown-item:hover {
+  background-color: #10325c;
+}
+
+.top-navbar-dropdown .top-navbar-dropdown-link {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.top-navbar-side {
+  gap: 1rem;
+  justify-content: flex-end;
+  order: 2;
+  width: 224px;
+}
+
+.top-navbar-side .buttons {
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.top-navbar-side .buttons > * {
+  border-radius: 0.4rem;
+  padding: 0.3rem;
+  transition-duration: 0.1s;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-navbar-side .buttons > *:hover {
+  background-color: #eee;
+}
+
+.top-navbar-side .buttons > a {
+  color: black;
+}
+
+.top-navbar-side .buttons button {
+  border: none;
+  outline: none;
+  background-color:rgb(250, 250, 249);
+  font-size: 1.125rem;
+  font-family: "Noto Sans KR";
+
+}
+
+.open-navbar {
+  background-color: var(--color-background);
+  border: none;
+  border-radius: 0.4rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+  transition: background-color 0.08s cubic-bezier(0.12, 0, 0.39, 0);
+}
+
+.open-navbar:hover {
+  background-color: #eee;
+}
+/* 헤더 스타일 정의 끝 */
+
+/* 푸터 스타일 정의 */
+
+.footer {
+}
+
+.bottom-navbar {
+  width: 100%;
+}
+
+/* 푸터 스타일 정의 끝 */
+
+/* form 스타일 */
+form label {
+  color: #3c4257;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+form .input-text {
+  appearance: none;
+  border: 1px solid #bbb;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0 3px none;
+  color: #303441;
+  display: inline-block;
+  font-size: 1.125rem;
+  letter-spacing: 0.03rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  transition-duration: 0.1s;
+  transition-property: box-shadow, border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+form .input-text:hover {
+  border: 1px solid #333;
+}
+
+form .input-text:focus {
+  border: 1px solid white;
+  box-shadow: 0 0 0 3px #2563eb;
+  outline: none;
+}
+
+form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.--%3E%3Cpath d='m310.6 246.6-127.1 128c-7.1 6.3-15.3 9.4-23.5 9.4s-16.38-3.125-22.63-9.375l-127.1-128C.224 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75s3.12 25.75-6.08 34.85z'/%3E%3C/svg%3E");
+  background-position: calc(100% - 0.7rem);
+  background-repeat: no-repeat;
+  background-size: 0.8rem;
+  border: 1px solid #bbb;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0 3px none;
+  color: black;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  transition-duration: 0.1s;
+  transition-property: box-shadow, border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+form select:hover {
+  border: 1px solid #333;
+}
+
+form select:focus {
+  border: 1px solid white;
+  box-shadow: 0 0 0 3px #2563eb;
+  outline: none;
+}
+
+form .input-date {
+  appearance: none;
+  border: 1px solid #bbb;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0 3px none;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  transition-property: box-shadow, border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+form .input-date:hover {
+  border: 1px solid black;
+}
+
+form .input-date:focus {
+  border: 1px solid white;
+  box-shadow: 0 0 0 3px #2563eb;
+  outline: none;
+}
+
+form .submit {
+  appearance: none;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  display: inline-block;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  transition: background-color 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+form .submit:hover {
+  background-color: #2d91ef;
+}
+form .submit:active {
+  background-color: #2b56b5;
+}
+/* form 스타일 정의 끝 */

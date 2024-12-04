@@ -1,0 +1,53 @@
+/* 
+ * @prettier
+ */
+
+main {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.login-box-wrapper {
+  margin-top: 6rem;
+}
+
+.login-box {
+  background-color: white;
+  border-radius: 0.4rem;
+  box-shadow: 0 15px 35px 0 rgba(60, 66, 87, 0.08),
+    0 5px 15px 0 rgba(0, 0, 0, 0.12);
+  height: 25rem;
+  padding-left: 4.1rem;
+  padding-right: 4.1rem;
+  width: 30rem;
+}
+
+.login-description {
+  color: #3c4257;
+  margin-bottom: 1rem;
+}
+
+.login-description h2 {
+  font-size: 1.75rem;
+  letter-spacing: 0.05rem;
+}
+
+.login-description p {
+  font-size: 0.8rem;
+}
+
+.login-form {
+  gap: 0.5rem;
+}
+
+.find-account {
+  color: black;
+  font-size: 0.9rem;
+  text-align: right;
+  text-decoration: none;
+}
+
+.find-account:hover {
+  text-decoration: underline;
+}
